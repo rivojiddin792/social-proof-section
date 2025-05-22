@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --very-dark-magenta: hsl(300, 44%, 17%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: hsl(0, 0%, 100%);
+    background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: -1100px 0px, 0px 400px;
+    background-size: 100%, 100%;
+    font-size: 15px;
+    font-family: 'League spartan', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-wrapper {
+    margin: 1rem 1rem;
+}
+
+.card-overview {
+    max-width: 1110px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 71px;
+
+}
+
+.product-rating-container {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1rem;
+}
+
+.product-info {
+    width: 45%;
+}
+
+.product-title {
+    color: rgb(74, 8, 74);
+    font-size: 56px;
+    margin-bottom: 16px;
+}
+
+.product-description {
+    color: var(--dark-grayish-magenta);
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.rating-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.rating-items {
+    background-color: hsl(0, 19%, 92%);
+    ;
+    border-radius: 7px;
+    width: 445px;
+    padding: 17px 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.star-gallery img {
+    padding-right: 5px;
+}
+
+.star-gallery h2 {
+    font-size: 17px;
+}
+
+.top {
+    position: relative;
+    right: 100px;
+}
+
+.middle {
+    position: relative;
+    right: 50px;
+}
+
+.review-container {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.review-items {
+    background-color: var(--very-dark-magenta);
+    color: var(--white);
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 350px;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.profile-image img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+.profile-info-header {
+    display: flex;
+    align-items: center;
+}
+
+.profile-header-text {
+    margin-left: 23px;
+}
+
+.profile-name {
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.profile-description {
+    color: rgb(152, 140, 152);
+}
+
+p.review {
+    line-height: 22px;
+}
+
+.middle-review {
+    position: relative;
+    bottom: 10px;
+}
+
+.left {
+    position: relative;
+    bottom: 20px;
+}
